@@ -1,0 +1,73 @@
+.list-words .back {
+  z-index: 100;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.list-words h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+.list-words h6 {
+  margin-bottom: 30px;
+}
+.list-words ul {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.list-words li {
+  text-wrap: nowrap;
+  background-color: rgb(233, 233, 233);
+  border-radius: 0.5rem;
+  list-style-type: none;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 10rem;
+}
+.list-words li .action {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.list-words li .action span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 80%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: var(--bs-secondary);
+}
+.list-words li .action span:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.list-words li .action span.delete {
+  color: var(--bs-danger);
+}
+.list-words .plus {
+  z-index: 100;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+/* Mobile */
+@media (max-width: 500px) {
+  .list-words .col-auto {
+    width: 80%;
+  }
+  .list-words .plus {
+    font-size: 18px !important;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
